@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatroom</title>
+
+    <!--Reference platform.js library here-->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCXIhIGZxTt8WdM0rfyqOllwcHOV5-EQXQ",
+    authDomain: "firemessage-a9af4.firebaseapp.com",
+    databaseURL: "https://firemessage-a9af4.firebaseio.com",
+    projectId: "firemessage-a9af4",
+    storageBucket: "",
+    messagingSenderId: "312363981413"
+  };
+  firebase.initializeApp(config);
+</script>
+     <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Asul|Eczar" rel="stylesheet">
+
+    <!--custom files-->
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+    <!--Add your name-->
+    <h1>Chat Room</h1>
+
+    <!--Will be populated with messages-->
+    <div class="allMessages">
+
+    </div>
+
+    <!--For user to input messages-->
+    <div class="userContainer">
+        <form>
+            <div class="textContainer">
+                <div>
+                    <p>Your name:</p><input id="name" type="text">
+                </div>
+                <div>
+                    <p>Message:</p><input id="message" type="text">
+                </div>
+            </div>
+            <div class="GObutton">
+                <input type="reset" onclick="updateDB();" value="Submit/Update">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
