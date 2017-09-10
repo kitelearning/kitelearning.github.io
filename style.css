@@ -12,7 +12,7 @@ h1{
     /*font-family: 'Asul', sans-serif;*/
     /*font-family: 'Alike Angular', serif;*/
     /*font-family: 'Eczar', serif;*/
-    font-family: 'Eczar', serif;
+    font-family:'Open Sans', sans-serif;;
     font-size: 45px;
     margin:0;
     color:white;
@@ -31,7 +31,7 @@ h1{
 
 .userContainer{
     position:relative;
-    height:10%;
+    height:12%;
     margin: 20px auto 0 auto;
     width: 60%;
     border: 2px solid black;
@@ -49,7 +49,10 @@ h1{
     display: inline-block;
     width:23%;
     margin:0;
+    float:left;
 }
+
+
 
 input{
     width:75%;
@@ -61,8 +64,9 @@ input{
 }
 
 .GObutton{
-    width:50%;
+    width:100%;
     margin: 0 auto;
+    float: right;
 }
 
 .GObutton input{
