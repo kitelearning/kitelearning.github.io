@@ -62,191 +62,294 @@
       </div>
     </header>
 
+
+        <div class="cards-container">
+
+      <div class="card card-js card-test-collapsed">
+        <div class="card-question">
+          <div class="card-question-text card-question-text-tester">
+            <a href="citizenship.html">Citizenship & Naturalization</a>
+          </div>
+        </div>
+        <div class="card-actions">
+          <button class="card-action-btn" onclick="clickedAnswer()">
+            Overview
+          </button>
+          <button class="card-action-btn">
+            Module(s)
+          </button>
+          <button class="card-action-btn" onclick="clean()">
+            Advisors
+          </button>
+        </div>
+      </div>
+
+      <div class="card card-css">
+        <div class="card-question">
+          Driver's License in the United States.
+        </div>
+        <div class="card-actions">
+          <button class="card-action-btn">
+            Overview
+          </button>
+          <button class="card-action-btn">
+            Module(s)
+          </button>
+          <button class="card-action-btn">
+            Advisors
+          </button>
+        </div>
+      </div>
+
+      <div class="card card-js">
+        <div class="card-question">
+        Houses
+        </div>
+        <div class="card-actions">
+          <button class="card-action-btn">
+            Overview
+          </button>
+          <button class="card-action-btn">
+            Module(s)
+          </button>
+          <button class="card-action-btn">
+            Advisors
+          </button>
+        </div>
+      </div>
+
+      <div class="card card-html">
+        <div class="card-question">
+          <div class="card-question-text">
+              Languages
+          </div>
+        </div>
+        <div class="card-actions">
+          <button class="card-action-btn">
+            Overview
+          </button>
+          <button class="card-action-btn">
+            Module(s)
+          </button>
+          <button class="card-action-btn">
+            Advisors
+          </button>
+        </div>
+      </div>
+
+      <div class="card card-css">
+        <div class="card-question">
+          Jobs
+        </div>
+        <div class="card-actions">
+          <button class="card-action-btn">
+            Overview
+          </button>
+          <button class="card-action-btn">
+            Module(s)
+          </button>
+          <button class="card-action-btn">
+            Advisors
+          </button>
+        </div>
+      </div>
+      <div class="card card-js">
+        <div class="card-question">
+          Health / Insurance
+        </div>
+        <div class="card-actions">
+          <button class="card-action-btn">
+            Overview
+          </button>
+          <button class="card-action-btn">
+            Module(s)
+          </button>
+          <button class="card-action-btn">
+            Advisor(s)
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <style>
+    body {
+      background: #525A75;
+      font-family: 'Work Sans', sans-serif;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      flex: 1;
+      flex-basis: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: #fff; margin: 1em; padding: 2em;
+    }
+    .card-css {
+      border-left: 10px solid yellow;
+    }
+    .card-js {
+      border-left: 10px solid orange;
+    }
+    .card-html {
+      border-left: 10px solid pink;
+    }
+    .card-question {
+    /*   text-align: center; */
+      flex: 1;
+      width: 100%;
+      font-weight: bold;
+      margin-bottom: 3em; /* maybe remove?*/
+      font-size: 1.2em;
+    }
+    .card-actions {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .card-action-btn {
+      flex: 1;
+      color: grey;
+      text-align: center;
+      background: #fff;
+      border: none;
+      font-size: 1em;
+    }
+    .card-test-expanded {
+      flex: 1;
+      font-weight: normal;
+      background: grey;
+    }
+    </style>
+    <!--
+        <div class="card">
+      <div class="card-body">
+        <div id="container" style="white-space:nowrap">
+            <font size="14">Citizenship</font>
+        </div>
+        <div class="btn-group">
+      <button type="button" class="btn btn-primary">Citizenship Options</button>
+      <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="citizenship.html">Overview</a>
+        <a class="dropdown-item" href="naturalization.html">Naturalization</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="citiAdvisor.html">Citizenship Advisors</a>
+      </div>
+    </div>
+    </div>​
+        </div>
+    </div>
     <div class="card">
-
-  <div class="card-body">
+    <div class="card-body">
     <div id="container" style="white-space:nowrap">
-
-
-        <font size="14">Citizenship</font>
+    <font size="14">Finding Jobs</font>
     </div>
     <div class="btn-group">
-  <button type="button" class="btn btn-primary">Citizenship Options</button>
-  <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button type="button" class="btn btn-primary">Jobs Options</button>
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="citizenship.html">Overview</a>
-    <a class="dropdown-item" href="naturalization.html">Naturalization</a>
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="jobs.html">Work Permits</a>
+    <a class="dropdown-item" href="jobsPosting.html">Angie's List Intro</a>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="citiAdvisor.html">Citizenship Advisors</a>
-  </div>
-</div>
-
-</div>​
-
-
+    <a class="dropdown-item" href="jobsAdvisor.html">Jobs Advisors</a>
     </div>
-</div>
-
-<div class="card">
-
-<div class="card-body">
-<div id="container" style="white-space:nowrap">
-
-
-    <font size="14">Finding Jobs</font>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-primary">Jobs Options</button>
-<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<span class="sr-only">Toggle Dropdown</span>
-</button>
-<div class="dropdown-menu">
-<a class="dropdown-item" href="jobs.html">Work Permits</a>
-<a class="dropdown-item" href="jobsPosting.html">Angie's List Intro</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="jobsAdvisor.html">Jobs Advisors</a>
-</div>
-</div>
-
-</div>​
-
-
-</div>
-
-
-
-  </div>
-</div>
-
-<div class="card">
-
-<div class="card-body">
-<div id="container" style="white-space:nowrap">
-
-
-    <font size="14">Securing Housing</font>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-primary">Housing Options</button>
-<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<span class="sr-only">Toggle Dropdown</span>
-</button>
-<div class="dropdown-menu">
-<a class="dropdown-item" href="house.html">Housing Finance</a>
-<a class="dropdown-item" href="houseProcess">Renting Proccess</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="houseAdvisor.html">Housing Advisor</a>
-</div>
-</div>
-
-</div>​
-
-
-</div>
-
-
-<div class="card">
-
-<div class="card-body">
-<div id="container" style="white-space:nowrap">
-
-
-    <font size="14">Setting up Bank Accounts</font>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-primary">Banking Options</button>
-<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<span class="sr-only">Toggle Dropdown</span>
-</button>
-<div class="dropdown-menu">
-<a class="dropdown-item" href="bank.html">Overview</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="bankAdvisor.html">Banking Advisor</a>
-</div>
-</div>
-
-</div>​
-
-
-</div>
-
-
-<div class="card">
-
-<div class="card-body">
-<div id="container" style="white-space:nowrap">
-
-
-    <font size="14">Learn English</font>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-primary">Learn English Options</button>
-<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<span class="sr-only">Toggle Dropdown</span>
-</button>
-<div class="dropdown-menu">
-<a class="dropdown-item" href="learnSPN.html">Aprende inglés de español</a>
-<a class="dropdown-item" href="learnCHN.html">从中文学习英语</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item" href="learnHND.html">हिंदी से अंग्रेजी सीखिए<</a>
-</div>
-</div>
-
-</div>​
-
-<div class="card">
-
-<div class="card-body">
-<div id="container" style="white-space:nowrap">
-
-
-    <font size="14">Driver's Licence</font>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-primary">Driver's Licence Options</button>
-<button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<span class="sr-only">Toggle Dropdown</span>
-</button>
-<div class="dropdown-menu">
-<a class="dropdown-item" href="driving.html">Overview</a>
-</div>
-</div>
-
-</div>​
-
-
-</div>
-
-
-</div>
-
-
-
-
-</div>​
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Kite Learning, 2017.</p>
-        <p class = "m-0 text-center text-white"><a href = "https://docs.google.com/document/d/1uGsMmPY8Tf6rH2x91w0Owy99tGOEktW8tPYnXz72BZQ/edit?usp=sharing">Privacy Policy</a> & <a href = "https://docs.google.com/document/d/119SoSsYDNQiRcVx_FDf5JL5zLf36zaMxFY-KzaYKwoQ/edit?usp=sharing">Terms and Conditions</a></p>
+    </div>
+    </div>​
+    </div>
       </div>
-      <!-- /.container -->
-    </footer>
+    </div>
+    <div class="card">
+    <div class="card-body">
+    <div id="container" style="white-space:nowrap">
+        <font size="14">Securing Housing</font>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary">Housing Options</button>
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="house.html">Housing Finance</a>
+    <a class="dropdown-item" href="houseProcess">Renting Proccess</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="houseAdvisor.html">Housing Advisor</a>
+    </div>
+    </div>
+    </div>​
+    </div>
+    <div class="card">
+    <div class="card-body">
+    <div id="container" style="white-space:nowrap">
+        <font size="14">Setting up Bank Accounts</font>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary">Banking Options</button>
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="bank.html">Overview</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="bankAdvisor.html">Banking Advisor</a>
+    </div>
+    </div>
+    </div>​
+    </div>
+    <div class="card">
+    <div class="card-body">
+    <div id="container" style="white-space:nowrap">
+        <font size="14">Learn English</font>
+    </div>
+    <div class="btn-group">
+    <button type="button" class="btn btn-primary">Learn English Options</button>
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+    <a class="dropdown-item" href="learnSPN.html">Aprende inglés de español</a>
+    <a class="dropdown-item" href="learnCHN.html">从中文学习英语</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="learnHND.html">हिंदी से अंग्रेजी सीखिए<</a>
+    </div>
+    </div>
+    </div>​
+    </div>
+    </div>​ -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Kite Learning, 2017.</p>
+            <p class = "m-0 text-center text-white"><a href = "https://docs.google.com/document/d/1uGsMmPY8Tf6rH2x91w0Owy99tGOEktW8tPYnXz72BZQ/edit?usp=sharing">Privacy Policy</a> & <a href = "https://docs.google.com/document/d/119SoSsYDNQiRcVx_FDf5JL5zLf36zaMxFY-KzaYKwoQ/edit?usp=sharing">Terms and Conditions</a></p>
+          </div>
+          <!-- /.container -->
+        </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  </body>
+      </body>
 
-</html>
+    </html>
